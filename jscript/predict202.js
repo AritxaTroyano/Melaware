@@ -46,7 +46,7 @@ let model;
 (async function () {
 	
 	model = await tf.loadModel('https://github.com/AritxaTroyano/Melaware/blob/master/final_model_kaggle_version1/model.json');
-	//$("#selected-image").attr("src", "https://melaware123.blob.core.windows.net/melaware/ISIC_0025316.jpg")
+	$("#selected-image").attr("src", "https://github.com/AritxaTroyano/Melaware/blob/master/assets/samplepic.jpg")
 	
 	
 	
