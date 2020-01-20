@@ -39,7 +39,7 @@ $("#image-selector").change(function () {
 let model;
 (async function () {
 	
-	model = await tf.loadModel('https://github.com/AritxaTroyano/Melaware/blob/master/final_model_kaggle_version1/model.json');
+	model = await tf.loadModel('https://melaware123.blob.core.windows.net/melaware/predict201.js');
 	$("#selected-image").attr("src", "https://github.com/AritxaTroyano/Melaware/blob/master/assets/samplepic.jpg")
 	
 	
