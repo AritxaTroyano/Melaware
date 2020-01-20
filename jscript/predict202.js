@@ -45,7 +45,7 @@ $("#image-selector").change(function () {
 let model;
 (async function () {
 	
-	model = await tf.loadModel('https://melaware123.blob.core.windows.net/melaware/predict202.js');
+	model = await tf.loadModel('https://melaware123.blob.core.windows.net/melaware/model.json');
 	$("#selected-image").attr("src", "https://melaware123.blob.core.windows.net/melaware/ISIC_0025316.jpg")
 	
 	
