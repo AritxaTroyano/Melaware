@@ -40,13 +40,11 @@ $("#image-selector").change(function () {
 });
 
 
-
-
 let model;
 (async function () {
 	
-	model = await tf.loadModel('https://github.com/AritxaTroyano/Melaware/blob/master/final_model_kaggle_version1/model.json');
-	$("#selected-image").attr("src", "https://github.com/AritxaTroyano/Melaware/blob/master/assets/samplepic.jpg")
+	model = await tf.loadModel('/Melaware/final_model_kaggle_version1/model.json');
+	$("#selected-image").attr("src", "/Melaware/assets/samplepic.jpg")
 	
 	
 	
@@ -59,13 +57,7 @@ let model;
 })();
 
 
-
-
-
-
 $("#predict-button").click(async function () {
-	
-	
 	
 	let image = $('#selected-image').get(0);
 	
@@ -104,22 +96,8 @@ $("#predict-button").click(async function () {
 		}).slice(0, 3);
 	
 	
-$("#prediction-list").empty();
-top5.forEach(function (p) {
-
-	$("#prediction-list").append(`<li>${p.className}: ${p.probability.toFixed(6)}</li>`);
-
-	
+	$("#prediction-list").empty();
+	top5.forEach(function (p) {
+		$("#prediction-list").append(`<li>${p.className}: ${p.probability.toFixed(6)}</li>`);
 	});
-	
-	
 });
-
-
-
-
-
-
-
-
-
