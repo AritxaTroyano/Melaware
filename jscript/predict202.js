@@ -43,7 +43,7 @@ $("#image-selector").change(function () {
 let model;
 (async function () {
 	
-	model = await tf.loadModel('/Melaware/final_model_kaggle_version1/model.json');
+	model = await tf.loadModel('/Melaware/final_model/model.json');
 	$("#selected-image").attr("src", "/Melaware/assets/samplepic.jpg")
 	
 	
