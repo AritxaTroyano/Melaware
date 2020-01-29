@@ -55,14 +55,12 @@
 
 </script>
 
-<!--CSS Stylesheets-->
+<!--CSS-->
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/skin.css">
 
-<!--Link to Font Awesome icons-->
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css' integrity='sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns' crossorigin='anonymous'>
 
-<!--Link to fonts from google fonts-->
 <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
 
 <style>
@@ -77,13 +75,12 @@ html,body,h2,h3,h4 {font-family: Helvetica, sans-serif}
 
 
 
-<!-- w3-content defines a container for fixed size centered content,
-and is wrapped around the whole page content. -->
+<!-- centered content -->
 <div class="w3-content card" style="max-width:960px">
 
 
 
-<!-- 1. HOME PAGE TAB -->
+<!-- HOME PAGE -->
 <div class="tabbed w3-animate-opacity w3-white" id="home">
 
 
@@ -135,11 +132,11 @@ and is wrapped around the whole page content. -->
 </div>
 
 
-</div><!--END OF HOME PAGE TAB-->
+</div><!--END OF HOME PAGE -->
 
 
 
-<!-- We simulate clicks on these two. -->
+
 <div class="hide">
 	<button id='predict-button'>Predict</button>
 </div>
@@ -147,7 +144,7 @@ and is wrapped around the whole page content. -->
 <div class="hide">
 	<input id="image-selector" type="file">
 </div>
-<!--===================================-->
+
 
 
 	<!-- Load jQuery -->
@@ -159,19 +156,12 @@ and is wrapped around the whole page content. -->
 	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.3/dist/tf.min.js"> 
 	</script>
 	
-	<!-- NOTE:
-	Change the predict.js file name (change the number) each time you modify the predict.js file.
-	This will force the browser to load the latest predict.js and not load
-	the predict.js file that is in the user's cache.
-	There is a stackoverflow soulution that says to add a version to the js file. 
-	But it could be that some browsers can ignore the version. Therefore I think
-	it's safer to change the js file name.-->
 	<script src="jscript/skin_classes.js"></script>
 	<script src="jscript/predict202.js"></script> 
 	
 	
 	
-</div> <!-- w3-content -->
+</div> 
 
 </body>
 </html>
